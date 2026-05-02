@@ -11,16 +11,24 @@ An intelligent, nonpartisan election assistant that helps users access personali
 * 📊 Election timeline tracking and checklist system
 * 🧾 Smart input validation (ZIP code, age eligibility)
 * 🎯 Clean, responsive UI built with Tailwind CSS
+* 🗺️ Dynamic Google Maps polling location visualization based on ZIP code
 
 ---
 
 ## ☁️ Google Services Used
 
 * **Google Maps Embed API**
-  Used to display interactive polling station locations directly within the application.
+  Used to display interactive polling station locations directly within the application, dynamically updated based on user ZIP input.
 
 * **Cloud-inspired Architecture**
   Simulated real-time updates and scalable design based on Google Cloud principles.
+
+---
+
+## ⚙️ How It Works
+1. User enters ZIP code and Age
+2. System updates Google Map dynamically based on ZIP code
+3. Displays nearby polling locations and candidate comparison UI
 
 ---
 
@@ -59,7 +67,6 @@ An intelligent, nonpartisan election assistant that helps users access personali
 ## 🚧 Future Improvements
 
 * Real-time election data via APIs
-* Dynamic map updates based on user ZIP code
 * Backend integration for scalability
 * AI-based candidate recommendation engine
 
