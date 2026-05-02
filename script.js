@@ -213,14 +213,14 @@ function validateAgeTest(age) {
     if (age < 0 || age > 150) return false;
     return age >= 18;
 }
-        
+
 // Bootstrap application safely
 init();
 
-document.getElementById("election-form").addEventListener("submit", function(event) {
-  event.preventDefault();
-  const zipCode = document.getElementById("zip-code").value;
-  if (zipCode.length === 5) {
-    document.querySelector("#map-section iframe").src = `https://www.google.com/maps?q=${zipCode}&output=embed`;
-  }
+document.getElementById("election-form").addEventListener("submit", function (event) {
+    event.preventDefault();
+    const zipCode = document.getElementById("zip-code").value;
+    if (zipCode.length === 5) {
+        document.querySelector("#map-section iframe").src = `https://www.google.com/maps?q=${zipCode}&output=embed`;
+    }
 });
